@@ -1,0 +1,89 @@
+@font-face{
+  font-family: 'retro';
+  src: url('./assets/font/multitype-pixel-wide-bold.otf') format('opentype');  
+  font-weight: normal;
+  font-style: normal;
+}
+
+.title{
+  font-family: 'retro', fantasy, system-ui;
+  font-size: 2.0em;
+}
+
+.header-wrapper{
+  display: flex;
+  padding: 0px;
+  justify-content: space-between;
+  background-color: #ffeef8;
+  object-fit: contain;
+  max-height: 100px; 
+}
+#logo{
+  display: none;
+  height: 100px;
+}
+
+body{
+  background-image: url(./assets/images/weather.png);
+  background-repeat: repeat;
+  height: 100%;
+  background-position: -100px 50px;
+
+}
+
+.weather-wrapper{
+
+  margin: auto;
+  width: 530px;
+  min-height: 300px;
+  padding-bottom: 100px;
+  background-color: rgb(255, 227, 227);
+  display: flex;
+  border-radius: 10px;
+  border: 2px solid rgb(232, 232, 232);
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgb(186, 169, 150);
+  flex-direction: column;
+}
+
+.weather-search-wrapper{
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+
+.weather-search{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+}
+
+#search{
+  border-radius: 5px 0 0 5px;
+  height: 35px;
+  min-width: 30%;
+  width: auto;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 18px;
+}
+
+#submit{
+  border-radius: 0 5px 5px 0;
+  border-left: transparent;
+  height: 50px;
+  width: 40%;
+  padding: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+
+
+input[type='text']{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+

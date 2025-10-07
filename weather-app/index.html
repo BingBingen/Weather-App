@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles.css" rel="stylesheet">
+        <title> Mark's Weather App! </title>
+    </head>
+
+    <body>
+        <header>
+            <div class = "header-wrapper"> 
+                <div class="title"> 
+                    Weather Web 
+                </div> 
+                <div class="logo-wrapper">
+                    <img id="logo" src="./assets/images/weather.png" alt="moon searching bunny">
+                </div>
+            </div>
+
+        </header>
+        
+
+        <main>
+            <section class="weather-wrapper"> 
+                <div class="weather-search-wrapper">
+                    <h1 class="weather-heading" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 2.2em;"> ~ Weather ForeCast ~ </h1>
+                    <div class="weather-search"> 
+                        <input id="search" type="text" placeholder="Search by City">
+                        <input id="submit" type="button" onclick="fetchWeather()" value="Search">
+                    </div>
+                </div>
+                <div id="weather-data" style="display: none;">
+                    
+                </div>
+            
+            </section>
+        </main>
+        <script src="script.js"> </script>
+    </body>
+
+
+</html>
